@@ -1,0 +1,48 @@
+{
+  "project_info": {
+    "project_number": "697628613071",
+    "firebase_url": "https://droidan.firebaseio.com",
+    "project_id": "droidan",
+    "storage_bucket": "droidan.appspot.com"
+  },
+  "client": [
+    {
+      "client_info": {
+        "mobilesdk_app_id": "1:697628613071:android:613be5c5292cbf94115aba",
+        "android_client_info": {
+          "package_name": "com.example.droidan"
+        }
+      },
+      "oauth_client": [
+        {
+          "client_id": "697628613071-fqdlohfoevsmckig6g9sv52u8j8bunh4.apps.googleusercontent.com",
+          "client_type": 1,
+          "android_info": {
+            "package_name": "com.example.droidan",
+            "certificate_hash": "5444072b096219bff7df7841bcaadb28e89db38c"
+          }
+        },
+        {
+          "client_id": "697628613071-id4f1en57sl8fcv82iq9rdap64dftd3p.apps.googleusercontent.com",
+          "client_type": 3
+        }
+      ],
+      "api_key": [
+        {
+          "current_key": "AIzaSyAkhW83nxjWWN-V6qpcef-SLdBcol_pAxQ"
+        }
+      ],
+      "services": {
+        "appinvite_service": {
+          "other_platform_oauth_client": [
+            {
+              "client_id": "697628613071-id4f1en57sl8fcv82iq9rdap64dftd3p.apps.googleusercontent.com",
+              "client_type": 3
+            }
+          ]
+        }
+      }
+    }
+  ],
+  "configuration_version": "1"
+}
