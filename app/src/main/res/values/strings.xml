@@ -1,3 +1,74 @@
 <resources>
     <string name="app_name">Droidan</string>
+
+    <string name = "adminCusTxtView1"> Admin customer </string>
+    <string name = "adminCusbtn3"> Button1 </string>
+    <string name = "adminCusbtn5"> Button2 </string>
+
+    //Admin FeedBack
+    <string name = "adminFeedTxtView11"> Admin FeedBack </string>
+    <string name = "adminFeedBtn1"> Button1 </string>
+    <string name = "adminFeedbtn2"> Button2 </string>
+
+    //Admin Owner
+    <string name = "adminOwnerTxtView1"> Admin Owner </string>
+    <string name = "adminOwnerbtn1"> Button1 </string>
+    <string name = "adminOwnerbtn2"> Button2 </string>
+
+    //Booking Application
+    <string name = "bookAppTxtView1"> Booking Application </string>
+    <string name = "bookAppTxtView2"> Board Us </string>
+    <string name = "bookAppPlainTxt1"> First Name </string>
+    <string name = "bookAppEditTxt2"> Last Name </string>
+    <string name = "bookAppEditTxt3"> Phone Number </string>
+    <string name = "bookAppEditTxt4"> Email </string>
+    <string name = "bookAppEditTxt5"> Birth Date </string>
+    <string name = "bookAppEditTxt6"> Number of rooms </string>
+    <string name = "bookAppBtn1"> Submit </string>
+    <string name = "bookAppTxtView3"> Sex </string>
+    <string name = "bookAppRadioBtn1"> Male </string>
+    <string name = "bookAppRadioBtn2"> Female </string>
+
+
+    //Owner Registration
+    <string name = "OwnerRegiTxtView1"> Enter Hostel Details </string>
+    <string name = "OwnerRegiTxtView2"> Board Us </string>
+    <string name = "OwnerRegiEditTxt"> Owner Name </string>
+    <string name = "OwnerRegiEditTxt1"> Confirm Password </string>
+    <string name = "OwnerRegiEditTxt2"> Password </string>
+    <string name = "OwnerRegibtn1"> Submit </string>
+    <string name = "OwnerRegiEditTxt3"> phoneno </string>
+    <string name = "OwnerRegiEditTxt4"> email </string>
+
+    //Owner Page
+    <string name = "OwnerPageImageView"> Insert Image Here </string>
+    <string name = "OwnerPageBtn1"> Choose Image </string>
+    <string name = "OwnerPageEditTxt1"> Description </string>
+    <string name = "OwnerPageEditTxt2"> Map Link </string>
+    <string name = "OwnerPageEditTxt3"> Number Of Beds </string>
+    <string name = "OwnerPageEditTxt4"> Phone Number </string>
+    <string name = "OwnerPageBtn2"> Submit </string>
+
+    //Login
+    <string name = "LoginTxtView1"> Board Us </string>
+    <string name = "LoginEditTxt"> Password </string>
+    <string name = "LoginBtn1"> LOGIN </string>
+    <string name = "LoginBtn2"> REGISTER </string>
+    <string name = "LoginEditTxt1"> Phone Number </string>
+
+    //Main
+    <string name = "MainTxtView1"> Board Us </string>
+    <string name = "MainBtn1"> LOGIN </string>
+    <string name = "MainBtn2"> SINGUP </string>
+    <string name = "MainBtn3"> OWNER  </string>
+
+    //FeedBack
+    <string name = "TxtView"> Your Feedback Is Important For Us! </string>
+    <string name = "EditTxt2"> Enter your name here </string>
+    <string name = "EditTxt3"> Please enter your email here </string>
+    <string name = "EditTxt4">EditText_FeedbackBody  </string>
+    <string name = "CheckBox"> Are you sure you want to submit? Check the box then! </string>
+    <string name = "Btn1"> Submit  </string>
+
+
 </resources>

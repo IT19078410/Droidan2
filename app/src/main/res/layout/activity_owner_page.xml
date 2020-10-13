@@ -1,0 +1,64 @@
+<?xml version="1.0" encoding="utf-8"?>
+<LinearLayout xmlns:android="http://schemas.android.com/apk/res/android"
+    xmlns:app="http://schemas.android.com/apk/res-auto"
+    xmlns:tools="http://schemas.android.com/tools"
+    android:layout_width="match_parent"
+    android:layout_height="match_parent"
+    android:orientation="vertical"
+    android:gravity="center_horizontal"
+    tools:context=".InsertImage">
+
+    <ImageView
+        android:id="@+id/imageView2"
+        android:layout_width="471dp"
+        android:layout_height="236dp"
+        android:contentDescription="@string/OwnerPageImageView"
+        android:scaleType="centerCrop"
+        android:src="@drawable/insert"
+        tools:ignore="InvalidId" />
+
+    <Button
+        android:id="@+id/choosebtn"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/OwnerPageBtn1"
+        android:text="@string/OwnerPageBtn1" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName3"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/OwnerPageEditTxt1"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName4"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/OwnerPageEditTxt2"
+        android:inputType="textPersonName" />
+
+    <EditText
+        android:id="@+id/editTextTextPersonName6"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:ems="10"
+        android:hint="@string/OwnerPageEditTxt3"
+        android:inputType="textPersonName|numberDecimal" />
+
+    <EditText
+        android:id="@+id/phone2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="Phone Number"
+        tools:text="@string/OwnerPageEditTxt4" />
+
+    <Button
+        android:id="@+id/button2"
+        android:layout_width="match_parent"
+        android:layout_height="wrap_content"
+        android:hint="@string/OwnerPageBtn2"
+        android:text="@string/OwnerPageBtn2" />
+</LinearLayout>

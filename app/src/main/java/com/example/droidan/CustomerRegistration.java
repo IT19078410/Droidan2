@@ -23,7 +23,7 @@ import com.google.firebase.database.ValueEventListener;
 import java.util.HashMap;
 
 public class CustomerRegistration extends AppCompatActivity {
-    private Button btnSignIn, insertbtn;
+    private Button btnSignIn;
     private EditText cname, cphoneno, cpassword, cconfirmpassword;
     private ProgressDialog loadingbar;
 
@@ -39,20 +39,13 @@ public class CustomerRegistration extends AppCompatActivity {
 
         loadingbar = new ProgressDialog(this);
 
+        btnSignIn=(Button)findViewById(R.id.SignIn1);
         btnSignIn.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CreateAccount();
-
-            }
-        });
-        insertbtn = (Button) findViewById(R.id.photo1);
-        insertbtn.setOnClickListener(new View.OnClickListener() {
-            @Override
-            public void onClick(View view) {
-                Intent i = new Intent(CustomerRegistration.this, InsertImage.class);
+                Intent i = new Intent(CustomerRegistration.this, HomePage.class);
                 startActivity(i);
-
             }
         });
     }

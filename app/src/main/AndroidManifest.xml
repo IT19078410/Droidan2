@@ -9,7 +9,8 @@
         android:roundIcon="@mipmap/ic_launcher_round"
         android:supportsRtl="true"
         android:theme="@style/AppTheme">
-        <activity android:name=".AdminFeedBack"></activity>
+        <activity android:name=".OwnerPage"></activity>
+        <activity android:name=".AdminFeedBack" />
         <activity android:name=".AdminOwner" />
         <activity android:name=".AdminCustomer" />
         <activity android:name=".BookingApplication" />

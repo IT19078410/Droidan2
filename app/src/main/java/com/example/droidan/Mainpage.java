@@ -12,9 +12,7 @@ import android.widget.Button;
 public class Mainpage extends AppCompatActivity {
 
     Button btnLogin, btnOwner, btnSignUp;
-//    private Button btnLogin;
-//    private Button btnSignUp;
-//    private Button btnOwner;
+
 
 
     @Override
@@ -22,9 +20,9 @@ public class Mainpage extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_main);
 
-//        ViewPager viewPager = findViewById(R.id.viewPager);
-//        ImageAdapter adapter = new ImageAdapter(this);
-//        viewPager.setAdapter(adapter);
+       ViewPager viewPager = findViewById(R.id.viewPager);
+       ImageAdapter adapter = new ImageAdapter(this);
+       viewPager.setAdapter(adapter);
 
         btnLogin = findViewById(R.id.login);
         btnLogin.setOnClickListener(new View.OnClickListener() {

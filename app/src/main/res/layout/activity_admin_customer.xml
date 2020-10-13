@@ -27,10 +27,11 @@
             android:id="@+id/textView11"
             android:layout_width="match_parent"
             android:layout_height="50dp"
-            android:text="Admin Customer"
+            android:hint="@string/adminCusTxtView1"
             android:textAlignment="center"
             android:textSize="24sp"
-            android:textStyle="bold" />
+            android:textStyle="bold"
+            tools:text="@string/adminCusTxtView1" />
 
         <TextView
             android:id="@+id/textView12"
@@ -44,7 +45,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:layout_marginBottom="4dp"
-        android:text="Button"
+        android:hint="@string/adminCusbtn3"
+        android:text="@string/adminCusbtn3"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="0.006"
@@ -58,7 +60,8 @@
         android:layout_height="wrap_content"
         android:layout_marginTop="72dp"
         android:layout_marginBottom="4dp"
-        android:text="Button"
+        android:hint="@string/adminCusbtn5"
+        android:text="@string/adminCusbtn5"
         app:layout_constraintBottom_toBottomOf="parent"
         app:layout_constraintEnd_toEndOf="parent"
         app:layout_constraintHorizontal_bias="1.0"
