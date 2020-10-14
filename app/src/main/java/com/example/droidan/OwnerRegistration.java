@@ -36,7 +36,7 @@ public class OwnerRegistration extends AppCompatActivity {
 
         cname = (EditText) findViewById(R.id.editTextTextPersonName);
         cphoneno = (EditText) findViewById(R.id.phoneno);
-        cpassword = (EditText) findViewById(R.id.password2);
+        cpassword = (EditText) findViewById(R.id.password2n);
         email=(EditText) findViewById(R.id.email);
         submit=(Button) findViewById(R.id.Register1) ;
         loadingbar = new ProgressDialog(this);

@@ -1,6 +1,5 @@
 package com.example.droidan;
 
-import androidx.annotation.NonNull;
 import androidx.appcompat.app.AppCompatActivity;
 
 import android.content.Intent;
@@ -8,13 +7,6 @@ import android.os.Bundle;
 import android.view.View;
 import android.widget.Button;
 import android.widget.EditText;
-import android.widget.Toast;
-
-import com.google.firebase.database.DataSnapshot;
-import com.google.firebase.database.DatabaseError;
-import com.google.firebase.database.DatabaseReference;
-import com.google.firebase.database.FirebaseDatabase;
-import com.google.firebase.database.ValueEventListener;
 
 public class Login extends AppCompatActivity {
     private EditText phoneno,
@@ -27,10 +19,10 @@ public class Login extends AppCompatActivity {
         super.onCreate(savedInstanceState);
         setContentView(R.layout.activity_login);
 
-        phoneno =findViewById(R.id.phoneno2);
-                password =findViewById(R.id.password2);
-        login =findViewById(R.id.login2);
-                register =findViewById(R.id.register);
+        phoneno =findViewById(R.id.phonen2);
+                password =findViewById(R.id.password2n);
+        login =findViewById(R.id.login2n);
+                register =findViewById(R.id.registern);
                 login.setOnClickListener(new View.OnClickListener() {
                     @Override
                     public void onClick(View view) {

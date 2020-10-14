@@ -35,7 +35,7 @@ public class CustomerRegistration extends AppCompatActivity {
         btnSignIn = (Button) findViewById(R.id.SignIn1);
         cname = (EditText) findViewById(R.id.editTextTextPersonName);
         cphoneno = (EditText) findViewById(R.id.phoneno);
-        cpassword = (EditText) findViewById(R.id.password2);
+        cpassword = (EditText) findViewById(R.id.password2n);
 
         loadingbar = new ProgressDialog(this);
 

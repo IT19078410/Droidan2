@@ -55,7 +55,7 @@
         app:srcCompat="@drawable/hostel1" />
 
     <EditText
-        android:id="@+id/password2"
+        android:id="@+id/password2n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
@@ -69,7 +69,7 @@
         app:layout_constraintVertical_bias="0.6" />
 
     <Button
-        android:id="@+id/login2"
+        android:id="@+id/login2n"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/LoginBtn1"
@@ -83,7 +83,7 @@
         app:layout_constraintVertical_bias="0.8" />
 
     <Button
-        android:id="@+id/register"
+        android:id="@+id/registern"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:hint="@string/LoginBtn2"
@@ -97,7 +97,7 @@
         app:layout_constraintVertical_bias="0.9" />
 
     <EditText
-        android:id="@+id/phoneno2"
+        android:id="@+id/phonen2"
         android:layout_width="wrap_content"
         android:layout_height="wrap_content"
         android:ems="10"
