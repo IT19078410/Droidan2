@@ -24,7 +24,7 @@ import java.util.HashMap;
 
 public class CustomerRegistration extends AppCompatActivity {
     private Button btnSignIn;
-    private EditText cname, cphoneno, cpassword, cconfirmpassword;
+    private EditText cname, cphoneno, cpassword, cconfirmpassword, cEmail;
     private ProgressDialog loadingbar;
 
 
@@ -36,6 +36,7 @@ public class CustomerRegistration extends AppCompatActivity {
         cname = (EditText) findViewById(R.id.editTextTextPersonName);
         cphoneno = (EditText) findViewById(R.id.phoneno);
         cpassword = (EditText) findViewById(R.id.password2n);
+        cEmail = findViewById(R.id.cEmail);
 
         loadingbar = new ProgressDialog(this);
 

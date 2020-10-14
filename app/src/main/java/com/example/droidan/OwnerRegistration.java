@@ -24,7 +24,7 @@ import java.util.HashMap;
 
 public class OwnerRegistration extends AppCompatActivity {
 
-    private EditText cname, cphoneno, cpassword, cconfirmpassword,email;
+    private EditText cname, cphoneno, cpassword, cconfirmpassword, email;
     private ProgressDialog loadingbar;
     Button submit;
 
@@ -37,15 +37,15 @@ public class OwnerRegistration extends AppCompatActivity {
         cname = (EditText) findViewById(R.id.editTextTextPersonName);
         cphoneno = (EditText) findViewById(R.id.phoneno);
         cpassword = (EditText) findViewById(R.id.password2n);
-        email=(EditText) findViewById(R.id.email);
-        submit=(Button) findViewById(R.id.Register1) ;
+        email = (EditText) findViewById(R.id.email);
+        submit = (Button) findViewById(R.id.Register1);
         loadingbar = new ProgressDialog(this);
         submit.setOnClickListener(new View.OnClickListener() {
             @Override
             public void onClick(View view) {
                 CreateAccount();
-                Intent i = new Intent(OwnerRegistration.this, OwnerPage.class);
-                startActivity(i);
+//                Intent i = new Intent(OwnerRegistration.this, OwnerPage.class);
+//                startActivity(i);
             }
         });
 
@@ -69,12 +69,12 @@ public class OwnerRegistration extends AppCompatActivity {
             loadingbar.setCanceledOnTouchOutside(false);
             loadingbar.show();
 
-            ValidatePhone(name, phoneno, password,oemail);
+            ValidatePhone(name, phoneno, password, oemail);
 
         }
     }
 
-    private void ValidatePhone(final String name, final String phoneno, final String password,final String owemail) {
+    private void ValidatePhone(final String name, final String phoneno, final String password, final String owemail) {
         final DatabaseReference RootRef;
         RootRef = FirebaseDatabase.getInstance().getReference();
 
@@ -82,13 +82,13 @@ public class OwnerRegistration extends AppCompatActivity {
             @Override
             public void onDataChange(@NonNull DataSnapshot dataSnapshot) {
                 if (!(dataSnapshot.child("Owners").child(phoneno).exists())) {
-                    HashMap<String, Object>ownerdatamap = new HashMap<>();
+                    HashMap<String, Object> ownerdatamap = new HashMap<>();
                     ownerdatamap.put("phoneno", phoneno);
                     ownerdatamap.put("name", name);
                     ownerdatamap.put("password", password);
-                    ownerdatamap.put("email",owemail);
+                    ownerdatamap.put("email", owemail);
 
-                    RootRef.child("Customers").child(phoneno).updateChildren(ownerdatamap)
+                    RootRef.child("Owners").child(phoneno).updateChildren(ownerdatamap)
                             .addOnCompleteListener(new OnCompleteListener<Void>() {
                                 @Override
                                 public void onComplete(@NonNull Task<Void> task) {
@@ -96,8 +96,8 @@ public class OwnerRegistration extends AppCompatActivity {
                                         Toast.makeText(OwnerRegistration.this, "Acoount created succesfully", Toast.LENGTH_SHORT).show();
                                         loadingbar.dismiss();
 
-                                        Intent i = new Intent(OwnerRegistration.this, OwnerPage.class);
-                                        startActivity(i);
+//                                        Intent i = new Intent(OwnerRegistration.this, OwnerPage.class);
+//                                        startActivity(i);
                                     } else {
                                         loadingbar.dismiss();
                                         Toast.makeText(OwnerRegistration.this, "Please try again later", Toast.LENGTH_SHORT).show();

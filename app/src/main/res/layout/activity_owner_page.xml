@@ -5,13 +5,13 @@
     android:layout_width="match_parent"
     android:layout_height="match_parent"
     android:orientation="vertical"
-    android:gravity="center_horizontal"
-    tools:context=".InsertImage">
+    android:gravity="center_horizontal">
+<!--    tools:context=".InsertImage">-->
 
     <ImageView
         android:id="@+id/imageView2"
-        android:layout_width="471dp"
-        android:layout_height="236dp"
+        android:layout_width="395dp"
+        android:layout_height="wrap_content"
         android:contentDescription="@string/OwnerPageImageView"
         android:scaleType="centerCrop"
         android:src="@drawable/insert"
@@ -46,13 +46,14 @@
         android:layout_height="wrap_content"
         android:ems="10"
         android:hint="@string/OwnerPageEditTxt3"
-        android:inputType="textPersonName|numberDecimal" />
+        android:inputType="number" />
 
     <EditText
         android:id="@+id/phone2"
         android:layout_width="match_parent"
         android:layout_height="wrap_content"
-        android:hint="Phone Number"
+        android:hint="@string/OwnerPageEditTxt4"
+        android:inputType="number|phone"
         tools:text="@string/OwnerPageEditTxt4" />
 
     <Button

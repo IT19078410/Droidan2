@@ -41,17 +41,17 @@ public class Loginn extends AppCompatActivity {
             @Override
             public void onClick(View view) {
                 DatabaseReference databaseReference= FirebaseDatabase.getInstance().getReference();
-                databaseReference.child("Customers").addValueEventListener(new ValueEventListener() {
+                databaseReference.child("Owners").addValueEventListener(new ValueEventListener() {
                     @Override
                     public void onDataChange(@NonNull DataSnapshot snapshot) {
-                        String input1=Phoneno.getText().toString();
-                        String input2=password.getText().toString();
+                        String input1 =Phoneno.getText().toString();
+                        String input2 =password.getText().toString();
 
                         if(snapshot.child(input1).exists()){
                             if(snapshot.child(input2).exists()){
-                                if(snapshot.child("phoneno").equals("admin")){
+                                if(snapshot.child(input1).equals("123")){
                                     Preferences.setDataLogin(Loginn.this,true);
-                                    Preferences.setDataAs(Loginn.this,"admin");
+                                    Preferences.setDataAs(Loginn.this,"123");
                                     Intent i = new Intent(Loginn.this, AdminCustomer.class);
                                     startActivity(i);
                                 }else {
@@ -60,11 +60,11 @@ public class Loginn extends AppCompatActivity {
                                     startActivity(i);
                                 }
 
-                            }else{
-                                Toast.makeText(Loginn.this,"password  does not exist",Toast.LENGTH_SHORT).show();
+                            } else {
+                                Toast.makeText(Loginn.this, "password  does not exist", Toast.LENGTH_SHORT).show();
                             }
-                        }else {
-                            Toast.makeText(Loginn.this,"Phone number does not exist",Toast.LENGTH_SHORT).show();
+                        } else {
+                            Toast.makeText(Loginn.this, "Phone number does not exist", Toast.LENGTH_SHORT).show();
                         }
                     }
 

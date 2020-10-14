@@ -1,16 +1,17 @@
 package com.example.droidan.Model;
 
 public class Users {
-    private  String name, phone, password;
+    private  String name, phone, password, email;
 
     public Users(){
 
     }
 
-    public Users(String name, String phone, String password) {
+    public Users(String name, String phone, String password, String email) {
         this.name = name;
         this.phone = phone;
         this.password = password;
+        this.email = email;
     }
 
     public String getName() {
@@ -36,4 +37,13 @@ public class Users {
     public void setPassword(String password) {
         this.password = password;
     }
+
+    public String getEmail() {
+        return email;
+    }
+
+    public void setEmail(String email) {
+        this.email = email;
+    }
+
 }
